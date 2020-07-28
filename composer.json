@@ -1,0 +1,32 @@
+{
+  "name": "xjasmx/ticketing-common-bundle",
+  "version": "0.1.0",
+  "type": "symfony-bundle",
+  "description": "Common bundle",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Bohdan A",
+      "email": "xjasmx@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4"
+  },
+  "require-dev": {
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "xjasmx\\TicketingCommonBundle\\": "src/"
+    }
+  },
+  "extra": {
+    "symfony": {
+      "allow-contrib": false,
+      "require": "5.1.*"
+    }
+  }
+}
