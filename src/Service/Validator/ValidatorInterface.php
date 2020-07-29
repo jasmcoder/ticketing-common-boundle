@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace xjasmx\TicketingCommonBundle\Service;
+namespace xjasmx\TicketingCommonBundle\Service\Validator;
 
 interface ValidatorInterface
 {
