@@ -8,5 +8,5 @@ services:
     # Включает механизм автоконфигурации
     autoconfigure: true
 
-  xjasmx\TicketingCommonBundle\Service\:
-    resource: '../src/Service/*'
+  xjasmx\TicketingCommonBundle\Service\Validator:
+    resource: '../src/Service/Validator/*'
