@@ -10,3 +10,12 @@ services:
 
   Jasmcoder\TicketingCommonBundle\Service\Validator\:
     resource: '../src/Service/Validator/*'
+
+  Jasmcoder\TicketingCommonBundle\Event\JsonBodyParserSubscriber:
+    tags:
+      - { name: 'kernel.event_listener', event: 'kernel.request', method: 'onKernelRequest', priority: 100 }
+
+  Jasmcoder\TicketingCommonBundle\Event\AuthenticationSuccessListener:
+    arguments: ['%lexik_jwt_authentication.token_ttl%']
+    tags:
+      - { name: kernel.event_listener, event: lexik_jwt_authentication.on_authentication_success, method: onAuthenticationSuccess, priority: -2 }
