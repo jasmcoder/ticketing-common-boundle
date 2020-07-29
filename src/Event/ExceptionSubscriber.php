@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace xjasmx\TicketingCommonBundle\Event;
+namespace Jasmcoder\TicketingCommonBundle\Event;
 
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;

@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace xjasmx\TicketingCommonBundle\Event;
+namespace Jasmcoder\TicketingCommonBundle\Event;
 
 use Lexik\Bundle\JWTAuthenticationBundle\Event\AuthenticationSuccessEvent;
 use Lexik\Bundle\JWTAuthenticationBundle\Response\JWTAuthenticationSuccessResponse;

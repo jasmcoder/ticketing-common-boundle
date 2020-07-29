@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 
-namespace xjasmx\TicketingCommonBundle\DependencyInjection;
+namespace Jasmcoder\TicketingCommonBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
-use xjasmx\TicketingCommonBundle\Service\Validator\ValidatorInterface;
+use Jasmcoder\TicketingCommonBundle\Service\Validator\ValidatorInterface;
 
 class TicketingCommonExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container): void
     {
         $container->registerForAutoconfiguration(ValidatorInterface::class)
-            ->addTag('xjasmx.ticket-common.validator');
+            ->addTag('jasmcoder.ticket-common.validator');
 
         $loader = new YamlFileLoader(
             $container,

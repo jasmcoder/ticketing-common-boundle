@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace xjasmx\TicketingCommonBundle;
+namespace Jasmcoder\TicketingCommonBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

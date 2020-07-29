@@ -2,10 +2,10 @@
 
 declare(strict_types = 1);
 
-namespace xjasmx\TicketingCommonBundle\Service\Validator;
+namespace Jasmcoder\TicketingCommonBundle\Service\Validator;
 
 use Symfony\Component\Validator\Validator\ValidatorInterface;
-use xjasmx\TicketingCommonBundle\Service\Validator\ValidatorInterface as Validator;
+use Jasmcoder\TicketingCommonBundle\Service\Validator\ValidatorInterface as Validator;
 
 class ValidatorImpl implements Validator
 {
