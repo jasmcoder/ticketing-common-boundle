@@ -5,7 +5,7 @@ declare(strict_types = 1);
 namespace xjasmx\TicketingCommonBundle\Service\Validator;
 
 use Symfony\Component\Validator\Validator\ValidatorInterface;
-use xjasmx\TicketingCommonBundle\Service\ValidatorInterface as Validator;
+use xjasmx\TicketingCommonBundle\Service\Validator\ValidatorInterface as Validator;
 
 class ValidatorImpl implements Validator
 {
