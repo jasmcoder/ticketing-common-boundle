@@ -11,6 +11,14 @@ services:
   Jasmcoder\TicketingCommonBundle\Service\Validator\:
     resource: '../src/Service/Validator/*'
 
+
+  Jasmcoder\TicketingCommonBundle\Event\ExceptionSubscriber:
+    arguments:
+      $environment: '%env(APP_ENV)%'
+      $exceptionToStatus: "%exception_to_status%"
+    tags:
+      - { name: 'kernel.event_listener', event: 'kernel.exception' }
+
   Jasmcoder\TicketingCommonBundle\Event\JsonBodyParserSubscriber:
     tags:
       - { name: 'kernel.event_listener', event: 'kernel.request', method: 'onKernelRequest', priority: 100 }
