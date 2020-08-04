@@ -8,8 +8,8 @@ services:
     # Включает механизм автоконфигурации
     autoconfigure: true
 
-  Jasmcoder\TicketingCommonBundle\Security\JwtUserProvider:
-    alias: jasmcoder_security.jwt_provider
+  jasmcoder_security.jwt_provider:
+    alias: Jasmcoder\TicketingCommonBundle\Security\JwtUserProvider
 
   Jasmcoder\TicketingCommonBundle\Service\Validator\:
     resource: '../src/Service/Validator/*'
