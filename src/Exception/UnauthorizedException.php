@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Jasmcoder\TicketingCommonBundle\Exception;
 
-class AuthenticationException extends \Exception
+class UnauthorizedException extends \Exception
 {
     public function __construct(string $message, int $code = 0)
     {
