@@ -6,6 +6,9 @@ namespace Jasmcoder\TicketingCommonBundle\Service;
 
 use Symfony\Component\HttpFoundation\Request;
 
+/**
+ * @psalm-immutable
+ */
 class Pagination
 {
     public const DEFAULT_LIMIT = 50;
