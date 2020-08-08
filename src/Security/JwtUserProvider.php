@@ -6,10 +6,9 @@ namespace Jasmcoder\TicketingCommonBundle\Security;
 
 use Lexik\Bundle\JWTAuthenticationBundle\Security\User\JWTUserInterface;
 
-class JwtUserProvider implements JWTUserInterface
+class JwtUserProvider implements JWTUserInterface, UserInterface
 {
     private string $username;
-
     private array $roles;
     private string $id;
 
