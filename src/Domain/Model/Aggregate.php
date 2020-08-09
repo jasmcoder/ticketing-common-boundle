@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Jasmcoder\TicketingCommonBundle\Domain\Model;
 
-
 abstract class Aggregate
 {
     /**
@@ -12,7 +11,7 @@ abstract class Aggregate
      */
     private array $recordedEvents = [];
 
-    abstract public function getId(): AggregateIdInterface;
+    abstract public function getId(): string;
 
     /**
      * @param DomainEventInterface $event
