@@ -11,6 +11,9 @@ services:
   Jasmcoder\TicketingCommonBundle\Service\Validator\:
     resource: '../src/Service/Validator/*'
 
+  Jasmcoder\TicketingCommonBundle\Security\:
+    resource: '../src/Security/*'
+
 
   Jasmcoder\TicketingCommonBundle\Event\ExceptionSubscriber:
     arguments:
